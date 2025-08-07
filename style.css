@@ -141,11 +141,6 @@ article {
         margin: 0px 20px;
     }
 
-    .navigation_menu {
-        position: relative;
-        height: auto;
-    }
-
     .navigation_items {
         left: -100%;
         top: 100%;
