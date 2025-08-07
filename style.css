@@ -144,13 +144,14 @@ article {
     .navigation_items {
         left: -100%;
         top: 100%;
-        z-index: -100;
+        color: transparent;
         position: absolute;
         background-color: #222222;
         flex-direction: column;
         align-items: flex-start;
         width: 100%;
         padding: 10px 20px;
+        font-size: 20px;
     }
 
     .contents {
