@@ -1,0 +1,22 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 40px;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 100;
+}
+
+header .nav_list {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+}
+
+header .nav_list li a {
+    color: #000000;
+    font-weight: 500;
+}
+
