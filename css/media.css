@@ -4,6 +4,9 @@ header .burger_menu {
     gap: 4px;
     padding: 8px;
 }
+header nav .button_for_media {
+    display: none;
+}
 
 header .burger_menu .line {
     background-color: #000;
@@ -12,21 +15,51 @@ header .burger_menu .line {
     border-radius: 2px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 928px) {
     header .burger_menu {
         display: flex;
     }
 
+    header nav .button_for_media {
+        display: inline-block;
+    }
+    header .button:not(.button_for_media) {
+        display: none;
+    }
+
     header nav {
+        transform: translateX(-100%);
+        transition: 1s;
+        background-color: #fff;
         position: fixed;
+        align-items: start;
+        flex-direction: column;
         top: 113px;
         left: 0;
+        gap: 10px;
         width: 100vw;
+        padding: 10px;
+    }
+
+    header nav.open {
+        transform: translate(0);
     }
 
     header .nav_list {
         flex-direction: column;
-        padding: 10px;
-        background-color: #fff;
+    }
+
+    main {
+        flex-direction: column;
+        padding: 200px 20px 20px 20px;
+    }
+
+    main .window_block {
+        flex: none;
+        width: 100%;
+    }
+
+    main .info_block h1 {
+        font-size: 50px;
     }
 }
