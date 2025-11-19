@@ -4,3 +4,4 @@ import {
 } from "./javascript/toggle_burger.js";
 
 burgerMenuElement.addEventListener("click", toggleBurgerMenu);
+

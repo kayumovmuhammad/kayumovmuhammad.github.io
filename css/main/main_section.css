@@ -1,0 +1,40 @@
+main .main_section {
+    display: flex;
+    min-height: 100vh;
+    padding: 70px 50px;
+}
+main .main_section {
+    height: 50vh;
+}
+
+main .main_section .info {
+    margin-left: 100px;
+}
+main .main_section h2 {
+    font-size: 62px;
+}
+main .main_section .mrg-top-20px {
+    margin-top: 20px;
+}
+main .main_section .info .experience {
+    margin-top: 40px;
+    display: flex;
+}
+main .main_section .info .experience .item {
+    display: flex;
+    gap: 10px;
+    flex: 1;
+}
+main .main_section .info .experience .item .number,
+main .main_section .info .experience .item .text {
+    font-weight: bold;
+    color: #3b81f6;
+    font-size: 23px;
+}
+main .main_section .info .experience .item .text {
+    color: black;   
+}
+main .main_section .info .experience img {
+    border-radius: 10px;
+    overflow: hiddenz;
+}

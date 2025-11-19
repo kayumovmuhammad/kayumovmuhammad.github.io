@@ -1,4 +1,4 @@
-main {
+main .hello_section {
     display: flex;
     gap: 40px;
     align-items: center;
@@ -7,7 +7,7 @@ main {
     padding: 200px 20px 20px 60px;
 }
 
-main .window_block {
+main .hello_section .window_block {
     background: linear-gradient(to right, #3d80f4, #1b4de0);
     height: 400px;
     flex: 4;
@@ -15,7 +15,7 @@ main .window_block {
     justify-content: center;
     align-items: center;
 }
-main .window_block .window {
+main .hello_section .window_block .window {
     width: 330px;
     border-radius: 10px;
     background-color: #0d1933;
@@ -25,47 +25,46 @@ main .window_block .window {
     flex-direction: column;
     gap: 10px;
 }
-main .window_block .window .window_control div {
+main .hello_section .window_block .window .window_control div {
     height: 5px;
     width: 5px;
     border-radius: 50%;
 }
-main .window_block .window .window_control {
+main .hello_section .window_block .window .window_control {
     display: flex;
     gap: 3px;
     padding: 3px;
 }
-main .window_block .window .window_control .red {
+main .hello_section .window_block .window .window_control .red {
     background-color: red;
 }
-main .window_block .window .window_control .orange {
+main .hello_section .window_block .window .window_control .orange {
     background-color: orange;
 }
-main .window_block .window .window_control .green {
+main .hello_section .window_block .window .window_control .green {
     background-color: green;
 }
-main .window_block .window .content_block {
+main .hello_section .window_block .window .content_block {
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
-main .window_block .window .content_block .content {
+main .hello_section .window_block .window .content_block .content {
     height: 10px;
     width: 100px;
     background-color: #334256;
 }
-main .window_block .window .content_block .content.first {
+main .hello_section .window_block .window .content_block .content.first {
     background-color: #3b82f2;
 }
 
-main .window_block .window h3 {
+main .hello_section .window_block .window h3 {
     color: rgb(219, 219, 219);
     text-align: center;
     font-weight: normal;
 }
 
-
-main .info_block {
+main .hello_section .info_block {
     flex: 5;
     display: flex;
     flex-direction: column;
@@ -73,23 +72,23 @@ main .info_block {
     align-items: flex-start;
 }
 
-main .info_block h3 {
+.info_heading {
     display: flex;
     align-items: center;
     gap: 5px;
     font-weight: 400;
 }
 
-main .info_block h1 {
+main .hello_section .info_block h1 {
     font-size: 80px;
     font-weight: 900;
 }
-main .info_block h1 span {
+main .hello_section .info_block h1 span {
     color: #3c83f7;
     position: relative;
 }
-main .info_block h1 span:after {
-    content: '';
+main .hello_section .info_block h1 span:after {
+    content: "";
     background-color: #000;
     width: 2px;
     height: 100%;
@@ -98,11 +97,11 @@ main .info_block h1 span:after {
     right: -5px;
 }
 
-main .info_block p {
+main p {
     color: #666;
     line-height: 30px;
 }
 
-main .info_block .button {
+main .hello_section .info_block .button {
     margin-top: 30px;
 }

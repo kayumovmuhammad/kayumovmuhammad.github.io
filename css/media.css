@@ -19,6 +19,18 @@ header .burger_menu .line {
     header .burger_menu {
         display: flex;
     }
+    header .burger_menu div {
+        transition: .3s;
+    }
+    header .burger_menu.open div:nth-child(1) {
+        transform: translateY(6px) rotate(45deg);
+    }
+    header .burger_menu.open div:nth-child(2) {
+        transform: rotate(45deg);
+    }
+    header .burger_menu.open div:nth-child(3) {
+        transform: translateY(-6px) rotate(-45deg);
+    }
 
     header nav .button_for_media {
         display: inline-block;
@@ -29,7 +41,7 @@ header .burger_menu .line {
 
     header nav {
         transform: translateX(-100%);
-        transition: 1s;
+        transition: .3s;
         background-color: #fff;
         position: fixed;
         align-items: start;
